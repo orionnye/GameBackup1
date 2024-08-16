@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://b46prim8vlhey"]
+
+[ext_resource type="PackedScene" uid="uid://s50iip385cdd" path="res://Environments/Plane.tscn" id="1_kam4n"]
+[ext_resource type="PackedScene" uid="uid://dqtssmmh7r1c0" path="res://Units/Goober/Goober.tscn" id="2_2jroa"]
+[ext_resource type="PackedScene" uid="uid://bxty6uuxq3jb3" path="res://Hazards/DeathCube/DeathCube.tscn" id="3_ae5te"]
+
+[node name="EmptyPlane" type="Node3D"]
+
+[node name="Plane" parent="." instance=ExtResource("1_kam4n")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.84072, 9.16792)
+
+[node name="Goober" parent="." instance=ExtResource("2_2jroa")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.34792, 3.46101, -1.1221)
+
+[node name="DeathCube" parent="." instance=ExtResource("3_ae5te")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.45621, 0, -1.04428)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.752116, -0.0221836, 0.658657, -0.659031, -0.025317, 0.75169, 0, -0.999433, -0.033661, 5.52794, 6.3322, 0)

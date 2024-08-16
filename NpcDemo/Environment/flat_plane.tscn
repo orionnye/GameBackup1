@@ -1,0 +1,320 @@
+[gd_scene load_steps=7 format=3 uid="uid://b7b81yab58lmf"]
+
+[ext_resource type="PackedScene" uid="uid://xshlm1imlxk8" path="res://Environment/Props/Primary/DirtPlane.tscn" id="1_b3erq"]
+[ext_resource type="PackedScene" uid="uid://dd6riq4eu2m4i" path="res://Actors/Primitive/Sphere/Sphere.tscn" id="2_l0cw4"]
+[ext_resource type="PackedScene" uid="uid://bsmdjhsk0tfec" path="res://UI/Cameras/TopDownCamera.tscn" id="3_wvrcd"]
+[ext_resource type="PackedScene" uid="uid://cvsi45gea0scu" path="res://Actors/Controlled/Controlled.tscn" id="4_28i38"]
+[ext_resource type="PackedScene" uid="uid://bxg5f4sdbtsq" path="res://Actors/NPC/npc.tscn" id="4_l2ox4"]
+[ext_resource type="PackedScene" uid="uid://cctndghy80i5g" path="res://Environment/Props/Primary/Sphere.tscn" id="5_tyo0v"]
+
+[node name="FlatPlane" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.447859, 0)
+
+[node name="Plane2" parent="." instance=ExtResource("1_b3erq")]
+transform = Transform3D(40, 0, 0, 0, 40, 0, 0, 0, 40, 0, 0, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.613803, 0.789459, 0, -0.789459, 0.613803, 3.33786e-06, 17.2184, 11.9146)
+
+[node name="GreenBois" type="Node3D" parent="."]
+
+[node name="Sphere86" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.9421, 0, -21.8453)
+
+[node name="Sphere87" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.5469, 0, -22.8335)
+
+[node name="Sphere88" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9542, 0, -23.6735)
+
+[node name="Sphere89" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.9542, 0, -24.5629)
+
+[node name="Sphere90" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30.8437, 0, -25.1065)
+
+[node name="Sphere91" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.4367, 0, -26.0948)
+
+[node name="Sphere92" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.8321, 0, -26.9843)
+
+[node name="Sphere93" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.2389, 0, -24.5135)
+
+[node name="Sphere94" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.0411, 0, -23.5253)
+
+[node name="Sphere95" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.5844, 0, -22.3888)
+
+[node name="Sphere96" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9897, 0, -24.9088)
+
+[node name="Sphere97" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9897, 0, -24.9088)
+
+[node name="Sphere74" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.6811, 0, -21.3511)
+
+[node name="Sphere75" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.6436, 0, -21.3511)
+
+[node name="Sphere76" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.051, 0, -22.2406)
+
+[node name="Sphere77" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.8414, 0, -22.043)
+
+[node name="Sphere78" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.3968, 0, -22.9323)
+
+[node name="Sphere79" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.8296, 0, -23.13)
+
+[node name="Sphere80" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.8295, 0, -21.8947)
+
+[node name="Sphere81" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.7663, 0, -27.6762)
+
+[node name="Sphere82" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.4344, 0, -23.7229)
+
+[node name="Sphere83" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.7802, 0, -24.0688)
+
+[node name="Sphere84" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.9897, 0, -23.13)
+
+[node name="Sphere85" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -26.5944, 0, -23.97)
+
+[node name="Sphere62" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16.268, 0, -3.81307)
+
+[node name="Sphere63" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -15.7741, 0, -4.15876)
+
+[node name="Sphere64" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.6614, 0, 6.35779)
+
+[node name="Sphere65" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.674, 0, 6.25907)
+
+[node name="Sphere66" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25.1582, 0, -6.97384)
+
+[node name="Sphere67" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.8862, 0, -6.77628)
+
+[node name="Sphere68" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.5897, 0, -5.78847)
+
+[node name="Sphere69" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.3549, 0, -5.78847)
+
+[node name="Sphere70" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.8981, 0, -5.09703)
+
+[node name="Sphere71" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.3305, 0, -5.88725)
+
+[node name="Sphere72" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.9477, 0, -6.23298)
+
+[node name="Sphere73" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.1868, 0, -20.4121)
+
+[node name="Sphere49" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8469, 0, -4.49512)
+
+[node name="Sphere50" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8469, 0, -5.36917)
+
+[node name="Sphere51" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.4713, 0, -4.99458)
+
+[node name="Sphere52" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.9083, 0, -5.43161)
+
+[node name="Sphere53" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.6952, 0, -4.36671)
+
+[node name="Sphere54" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26.7164, 0, -3.53616)
+
+[node name="Sphere55" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.4594, 0, -2.47145)
+
+[node name="Sphere56" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.9285, 0, -2.68438)
+
+[node name="Sphere57" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.3112, 0, -3.91948)
+
+[node name="Sphere58" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.6265, 0, -6.3262)
+
+[node name="Sphere59" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.3496, 0, -7.26349)
+
+[node name="Sphere60" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3078, 0, -7.56173)
+
+[node name="Sphere61" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8614, 0, -8.30738)
+
+[node name="Sphere2" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.55801, 0, 2.39863)
+
+[node name="Sphere3" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1806, 0, 1.59543)
+
+[node name="Sphere4" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.84832, 0, 1.6535)
+
+[node name="Sphere5" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.24508, 0, 0.618051)
+
+[node name="Sphere6" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.26443, 0, 1.16964)
+
+[node name="Sphere7" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74829, 0, 0.201937)
+
+[node name="Sphere8" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.94183, 0, 1.03416)
+
+[node name="Sphere9" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6289, 0, 1.79865)
+
+[node name="Sphere10" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.76764, 0, 1.68253)
+
+[node name="Sphere11" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.39023, 0, 2.20509)
+
+[node name="Sphere12" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.1644, 0, 2.22444)
+
+[node name="Sphere13" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.42242, 0, 2.38895)
+
+[node name="Sphere14" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.42242, 0, 2.38895)
+
+[node name="Sphere15" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.81, 0, 12.4405)
+
+[node name="Sphere16" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.81, 0, 13.0649)
+
+[node name="Sphere17" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2481, 0, 14.6881)
+
+[node name="Sphere18" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4365, 0, 14.1887)
+
+[node name="Sphere19" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1243, 0, 15.0003)
+
+[node name="Sphere20" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.8735, 0, 15.8119)
+
+[node name="Sphere21" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.5613, 0, 15.3124)
+
+[node name="Sphere22" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.43755, 0, 15.5622)
+
+[node name="Sphere23" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.2394, 0, 23.6159)
+
+[node name="Sphere24" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.4267, 0, 24.49)
+
+[node name="Sphere25" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.7916, 0, 21.8678)
+
+[node name="Sphere26" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7281, 0, 21.0562)
+
+[node name="Sphere27" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.7281, 0, 22.18)
+
+[node name="Sphere28" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6646, 0, 21.9303)
+
+[node name="Sphere29" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.5397, 0, 21.1811)
+
+[node name="Sphere30" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5408, 0, 21.8054)
+
+[node name="Sphere31" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0973, 0, 34.6664)
+
+[node name="Sphere32" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.0973, 0, 34.6664)
+
+[node name="Sphere33" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.784, 0, 34.4167)
+
+[node name="Sphere34" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.2846, 0, 33.9797)
+
+[node name="Sphere35" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3416, 0, 5.69787)
+
+[node name="Sphere36" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.3416, 0, 4.51166)
+
+[node name="Sphere37" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3405, 0, 5.32328)
+
+[node name="Sphere38" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.3405, 0, 4.32436)
+
+[node name="Sphere39" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.3394, 0, 5.13598)
+
+[node name="Sphere40" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.1543, 0, 3.8249)
+
+[node name="Sphere41" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.7162, 0, 5.19841)
+
+[node name="Sphere42" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.2167, 0, 3.13815)
+
+[node name="Sphere43" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.2781, 0, -2.35589)
+
+[node name="Sphere44" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.2145, 0, -1.54427)
+
+[node name="Sphere45" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24.3383, 0, -1.85643)
+
+[node name="Sphere46" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22.0908, 0, -1.23211)
+
+[node name="Sphere47" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.0978, 0, -2.49729)
+
+[node name="Sphere48" parent="GreenBois" instance=ExtResource("5_tyo0v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25.8469, 0, -3.37134)
+
+[node name="TopDownCamera" parent="." node_paths=PackedStringArray("target") instance=ExtResource("3_wvrcd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.4086, 0)
+target = NodePath("../Actors/Controlled")
+
+[node name="Actors" type="Node3D" parent="."]
+
+[node name="NPC" parent="Actors" instance=ExtResource("4_l2ox4")]
+transform = Transform3D(-0.409991, -0.00140274, -0.912089, -0.00197581, 0.999998, -0.000649728, 0.912088, 0.00153573, -0.409993, 6.76611, 0.243927, -5.84572)
+gift = ExtResource("2_l0cw4")
+
+[node name="Controlled" parent="Actors" instance=ExtResource("4_28i38")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.41908, 2.20176, 8.42713)

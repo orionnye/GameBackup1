@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://dj8hiwpojfoup"]
+
+[ext_resource type="Texture2D" uid="uid://bafwsowg5y7wn" path="res://src/images/icon.svg" id="1_12kmb"]
+[ext_resource type="Script" path="res://src/gameObjects/Cards/Default/CardControl.cs" id="1_l4ybd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y6tr1"]
+albedo_texture = ExtResource("1_12kmb")
+uv1_scale = Vector3(2.86, 2.86, 2.86)
+uv1_offset = Vector3(0, 0.07, 0)
+texture_filter = 1
+texture_repeat = false
+
+[sub_resource type="BoxMesh" id="BoxMesh_ybg20"]
+
+[node name="Card" type="Node3D"]
+script = ExtResource("1_l4ybd")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.7, 0, 0, 0, 1, 0, 0, 0, 0.01, 0, 0, 0)
+material_override = SubResource("StandardMaterial3D_y6tr1")
+mesh = SubResource("BoxMesh_ybg20")

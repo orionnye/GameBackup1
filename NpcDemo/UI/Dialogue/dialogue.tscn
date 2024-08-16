@@ -1,0 +1,51 @@
+[gd_scene load_steps=2 format=3 uid="uid://c73blg6foshs1"]
+
+[ext_resource type="Texture2D" uid="uid://bskvg5hk58j0a" path="res://icon.svg" id="2_o3man"]
+
+[node name="Dialogue" type="HSplitContainer"]
+offset_right = 662.0
+offset_bottom = 212.0
+size_flags_horizontal = 3
+theme_override_constants/separation = 14
+collapsed = true
+dragger_visibility = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="PanelContainer"]
+layout_mode = 2
+texture = ExtResource("2_o3man")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+show_behind_parent = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = -50
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = -20
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.615686, 0.356863, 1, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 60
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/ColorRect/MarginContainer"]
+clip_contents = false
+layout_mode = 2
+text = "Hello World!"

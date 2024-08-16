@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cudxkvhy80kas"]
+
+[ext_resource type="Texture2D" uid="uid://fgefbbhxxtja" path="res://icon.svg" id="1_12c5l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w827n"]
+albedo_texture = ExtResource("1_12c5l")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4ow5f"]
+
+[node name="godotBlock" type="Node3D"]
+
+[node name="block" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_w827n")
+mesh = SubResource("BoxMesh_4ow5f")

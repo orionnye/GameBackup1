@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://dqtssmmh7r1c0"]
+
+[ext_resource type="Script" path="res://Units/Unit/Unit.cs" id="1_akygs"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_apivl"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_gftgx"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_1fyrr"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_371bp"]
+size = Vector3(0.9, 0.3, 0.8)
+
+[sub_resource type="SphereMesh" id="SphereMesh_t4did"]
+radius = 0.1
+height = 0.2
+
+[node name="Goober" type="RigidBody3D"]
+script = ExtResource("1_akygs")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_apivl")
+
+[node name="MeshHolder" type="Node3D" parent="."]
+
+[node name="Body" type="MeshInstance3D" parent="MeshHolder"]
+mesh = SubResource("CapsuleMesh_gftgx")
+skeleton = NodePath("../..")
+
+[node name="Head" type="MeshInstance3D" parent="MeshHolder"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.792436, 0.285487)
+mesh = SubResource("SphereMesh_1fyrr")
+
+[node name="Jaw" type="MeshInstance3D" parent="MeshHolder/Head"]
+transform = Transform3D(1, 0, 0, 0, 0.97967, -0.200616, 0, 0.200616, 0.97967, 0, -0.250588, 0.0687946)
+mesh = SubResource("BoxMesh_371bp")
+
+[node name="Left_Eye" type="MeshInstance3D" parent="MeshHolder/Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.195601, 0.174397, 0.382302)
+mesh = SubResource("SphereMesh_t4did")
+
+[node name="Right_Eye" type="MeshInstance3D" parent="MeshHolder/Head"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.20467, 0.174397, 0.382302)
+mesh = SubResource("SphereMesh_t4did")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bq13mop0scqex"]
+
+[ext_resource type="Script" path="res://Environment/environment_generator.cs" id="1_st1e8"]
+
+[node name="EnvironmentGenerator" type="Node3D"]
+script = ExtResource("1_st1e8")

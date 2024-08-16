@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxty6uuxq3jb3"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_xvxh7"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ikryf"]
+transparency = 1
+albedo_color = Color(1, 0.4, 0.345098, 0.203922)
+
+[node name="DeathCube" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_xvxh7")
+surface_material_override/0 = SubResource("StandardMaterial3D_ikryf")

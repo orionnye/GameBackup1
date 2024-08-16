@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bh1wu00wdbaie"]
+
+[ext_resource type="Texture2D" uid="uid://bafwsowg5y7wn" path="res://src/images/icon.svg" id="1_kyy2s"]
+[ext_resource type="Script" path="res://src/scripts/Unit.cs" id="2_pbeor"]
+[ext_resource type="Script" path="res://src/scripts/unitTimer.cs" id="3_nlubj"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_2neiv"]
+font_size = 50
+font_color = Color(1, 0, 0, 1)
+outline_size = 10
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Unit" type="Sprite2D"]
+position = Vector2(67, 67)
+texture = ExtResource("1_kyy2s")
+script = ExtResource("2_pbeor")
+
+[node name="Health" type="Label" parent="."]
+offset_left = -55.0
+offset_top = 74.0
+offset_right = 63.0
+offset_bottom = 146.0
+text = "0"
+label_settings = SubResource("LabelSettings_2neiv")
+
+[node name="Timer" type="Timer" parent="."]
+script = ExtResource("3_nlubj")
+
+[node name="StaminaBar" type="ColorRect" parent="."]
+offset_left = -61.0
+offset_top = -120.0
+offset_right = 67.0
+offset_bottom = -88.0
+color = Color(0.12549, 0.47451, 0.172549, 1)
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]

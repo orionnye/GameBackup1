@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsmdjhsk0tfec"]
+
+[ext_resource type="Script" path="res://UI/Scripts/TrackingLerp.cs" id="1_ajrlu"]
+[ext_resource type="Script" path="res://UI/Cameras/FocusFinder.cs" id="2_cw4hm"]
+
+[node name="TopDownCamera" type="Node3D"]
+script = ExtResource("1_ajrlu")
+lerpWeight = 0.2
+deadzone = 0.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 20, 0)
+script = ExtResource("2_cw4hm")

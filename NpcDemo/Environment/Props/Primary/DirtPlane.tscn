@@ -1,0 +1,56 @@
+[gd_scene load_steps=13 format=3 uid="uid://xshlm1imlxk8"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_171oy"]
+points = PackedVector3Array(-1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_ujk8t"]
+
+[sub_resource type="Gradient" id="Gradient_wvk16"]
+offsets = PackedFloat32Array(0.0691057, 0.96748)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_ju5od"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_5alsh"]
+as_normal_map = true
+bump_strength = 21.0
+color_ramp = SubResource("Gradient_wvk16")
+noise = SubResource("FastNoiseLite_ju5od")
+
+[sub_resource type="Gradient" id="Gradient_v8awg"]
+offsets = PackedFloat32Array(0.495935, 0.955285)
+colors = PackedColorArray(0, 0, 0, 1, 0, 0.760784, 0, 1)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_bar2a"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_rpugx"]
+color_ramp = SubResource("Gradient_v8awg")
+noise = SubResource("FastNoiseLite_bar2a")
+
+[sub_resource type="Gradient" id="Gradient_7dv71"]
+offsets = PackedFloat32Array(0, 0.833333)
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_71th7"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_kju1h"]
+color_ramp = SubResource("Gradient_7dv71")
+noise = SubResource("FastNoiseLite_71th7")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rg8dx"]
+albedo_color = Color(0.184314, 0.0313726, 0.0392157, 1)
+albedo_texture = SubResource("NoiseTexture2D_5alsh")
+emission_texture = SubResource("NoiseTexture2D_rpugx")
+normal_enabled = true
+normal_texture = SubResource("NoiseTexture2D_kju1h")
+heightmap_scale = 2.0
+heightmap_deep_parallax = true
+heightmap_min_layers = 4
+heightmap_max_layers = 8
+
+[node name="Plane" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_171oy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_ujk8t")
+surface_material_override/0 = SubResource("StandardMaterial3D_rg8dx")
